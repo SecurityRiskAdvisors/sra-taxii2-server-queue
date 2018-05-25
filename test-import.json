@@ -1,0 +1,67 @@
+{
+    "type": "bundle",
+    "objects": [
+        {
+            "name": "course of action test1",
+            "description": "test1",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/wiki/Technique/T1156",
+                    "source_name": "mitre-attack",
+                    "external_id": "T1156"
+                }
+            ],
+            "created_by_ref": "identity--a78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "id": "course-of-action--2f170666-7edb-4489-a5c2-9affa28a72e0",
+            "created": "2018-04-18T17:59:24.739Z",
+            "modified": "2018-04-18T17:59:24.739Z",
+            "type": "course-of-action"
+        },
+        {
+            "name": "FAIL TEST",
+            "description": "This should fail due to a key conflict, same idas above",
+            "external_references": [
+                {
+                    "url": "https://attack.mitre.org/wiki/Technique/T1156",
+                    "source_name": "mitre-attack",
+                    "external_id": "T1156"
+                }
+            ],
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "id": "course-of-action--2f170666-7edb-4489-a5c2-9affa28a72e0",
+            "created": "2018-04-18T17:59:24.739Z",
+            "modified": "2018-04-18T17:59:24.739Z",
+            "type": "course-of-action"
+        },
+        {
+            "name": "successful import",
+            "description": "Disable flash for all endpoints",
+            "external_references": [
+                {
+                    "url": "http://zombo.com",
+                    "source_name": "zombo-threat-intel-network",
+                    "external_id": "NewZLetter"
+                }
+            ],
+            "id": "course-of-action--3f13022a-7edb-a4c9-8cc2-9afaa28ab2bb",
+            "created": "2018-05-18T17:59:24.739Z",
+            "modified": "2018-05-18T17:59:24.739Z",
+            "type": "course-of-action"
+        },
+        {
+            "name": "successful import 2",
+            "description": "Determine how to escape the year 1999",
+            "external_references": [
+                {
+                    "url": "http://zombo.com",
+                    "source_name": "zombo-threat-intel-network",
+                    "external_id": "NewZLetter"
+                }
+            ],
+            "id": "course-of-action--3f13a22d-7edb-a48d-85c2-9afaa28ab2bb",
+            "created": "2018-05-18T17:59:24.739Z",
+            "modified": "2018-05-18T17:59:24.739Z",
+            "type": "course-of-action"
+        }
+    ]
+}
