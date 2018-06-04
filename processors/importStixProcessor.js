@@ -123,7 +123,7 @@ const importStixProcessor = async(job) => {
         }
     };
     
-    let fileStream = fs.createReadStream('./' + job.data.file, {encoding: 'utf8'});
+    let fileStream = fs.createReadStream(process.env.FILE_TEMP_DIR + '/' + job.data.file, {encoding: 'utf8'});
 
     let pipedStream = fileStream.pipe(JSONStream.parse('objects.*')).pipe(es.through(function (data) {
         this.pause();
