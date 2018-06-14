@@ -26,9 +26,9 @@
     "bull": "^3.4.2",
     "dotenv": "^5.0.1",
     "event-stream": "^3.3.4",
-    "mongoose": "^5.1.2",
+    "mongoose": "^5.1.4",
     "sra-stix2-validator": "^1.0.4",
-    "sra-taxii2-server-model": "^1.0.2",
+    "sra-taxii2-server-model": "^1.0.6",
     "stream-json": "^0.6.1"
   }
 }
