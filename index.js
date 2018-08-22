@@ -11,12 +11,4 @@ importStixQueue.process('importStix2', 10, Processors.importStixProcessor);
 importStixQueue.on('completed', function(job, result){
     console.log("completed job: ", job);
     console.log(" job result: ", result);
-  })
-
-  importStixQueue.getJobCounts().then((result) => {
-    console.log("job counts: ", result)
-});
-
-importStixQueue.getJob(24).then((result) => {
-  console.log("job: ", result)
 });

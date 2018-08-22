@@ -133,7 +133,7 @@ const importStixProcessor = async(job) => {
             .then((result) => {
                 // if result is true, we're just waiting on insert block to fill up
                 if(result !== true) {
-                    resultAggregator.incorporateParsedResults(result);
+                    resultAggregator.incorporateParsedResults(parseResultData(result));
                 }
             }, (err) => {
                 console.log("not implemented catch: ", err);
@@ -166,6 +166,13 @@ const importStixProcessor = async(job) => {
                     pending_count: 0,
                 }
 
+                // delete file process.env.FILE_TEMP_DIR + '/' + job.data.file
+                fs.unlink(process.env.FILE_TEMP_DIR + '/' + job.data.file, (err) => {
+                    if (err) {
+                        console.log("ERROR DELETING FILE AFTER JOB: " + err);
+                    }
+                })
+                
                 job.progress(100);
                 
                 return Promise.resolve(returnObj);
