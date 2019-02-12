@@ -27,11 +27,11 @@
     "chokidar": "^2.0.4",
     "dotenv": "^5.0.1",
     "event-stream": "^3.3.4",
-    "mongoose": "^5.1.4",
+    "mongoose": "^5.4.11",
     "mongoose-aggregate-paginate-extend": "github:thebleucheese/mongoose-aggregate-paginate-extend",
     "mongoose-paginate": "^5.0.3",
     "sra-stix2-validator": "^1.0.4",
-    "sra-taxii2-server-model": "^1.0.6",
+    "sra-taxii2-server-model": "^1.0.9",
     "stream-json": "^0.6.1"
   }
 }
