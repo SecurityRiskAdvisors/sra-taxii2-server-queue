@@ -31,7 +31,7 @@
     "mongoose-aggregate-paginate-extend": "github:thebleucheese/mongoose-aggregate-paginate-extend",
     "mongoose-paginate": "^5.0.3",
     "sra-stix2-validator": "^1.0.4",
-    "sra-taxii2-server-model": "^1.0.9",
+    "sra-taxii2-server-model": "^1.0.10",
     "stream-json": "^0.6.1"
   }
 }
